@@ -1,0 +1,174 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    color: #333; /* Dark gray text for better readability */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-color: beige; /* Beige background for the entire page */
+}
+
+/* Header and Footer styles */
+header, footer {
+    background-color: beige; /* Adjust header/footer background to match */
+    color: #c20030; /* Existing red color for contrast */
+    text-align: center;
+    padding: 1em;
+    width: 100vw; /* Full viewport width */
+    box-sizing: border-box;
+}
+
+h1 {
+font-size: 2.5em;
+font-family: 'Great Vibes', cursive;
+}
+
+.social-media-icons {
+    position: absolute;
+    left: 1em; /* Align to the left of the header */
+    top: 5%;
+}
+
+.social-media-icons i {
+    font-size: 1.5em; /* Icon size */
+    margin-left: 20px;
+}
+
+.social-media-icons i {
+    font-size: 1.5em; /* Icon size */
+    margin-right: 10px; /* Space between icons */
+    cursor: pointer; /* Change cursor to hand symbol on hover */
+}
+
+.utility-icons {
+    position: absolute;
+    right: 1em; /* Align to the right of the header */
+    top: 5%;
+}
+
+.utility-icons i {
+    font-size: 1.5em; /* Icon size */
+    margin-right: 20px; /* Space between icons */
+    cursor: pointer; /* Change cursor to hand symbol on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: beige;
+    color: #c20030;
+    text-align: center;
+    padding: 1em 0;
+    width: 100vw; /* Full viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+/* home page */
+.home {
+    display: flex;
+    width: 100vw; /* Full viewport width */
+    height: calc(100vh - 17.5em); /* Adjust height accounting for header/footer */
+    position: relative;
+}
+
+.home-left, .home-right-section {
+    position: absolute; /* Position both sections absolutely */
+    top: 0;
+    bottom: 0;
+}
+
+.home-left {
+    left: 0;
+    width: 60vw; /* 60% of the viewport width */
+    z-index: 1; /* Image is below the right section */
+}
+
+.home-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area */
+    margin-left: 2.5%;
+}
+
+.home-right-section {
+    right: 0;
+    width: 40vw; /* 40% of the viewport width */
+    background-color: #ee7c99;
+    z-index: 2; /* Ensures it overlaps the image */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content if needed */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-right: 2%;
+}
+
+.home-right-section p {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em; /* Slightly larger font size */
+    color: #fafafa; /* Lighter text color for modern look */
+    margin-bottom: 20px;
+}
+
+/* Style for the 'Online Order' button */
+button {
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    padding: 0; /* Remove padding */
+    font-size: 1.2em; /* Adjust font size */
+    color: #333; /* Text color */
+    cursor: pointer; /* Change cursor to hand symbol on hover */
+    text-decoration: none; /* Remove default text decoration */
+    border-bottom: 2px solid transparent; /* Invisible border to maintain size */
+    transition: border-bottom-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-right: 30px;
+}
+
+button:hover {
+    border-bottom-color: hsl(350, 100%, 68%); /* Change only the color of the underline on hover */
+}
+
+.order-button {
+    background-color: white; /* Minimalist, no background */
+    color: #333; /* Dark gray for contrast and simplicity */
+    border: 2px solid hsl(0, 0%, 30%); /* Simple border for definition */
+    padding: 8px 16px; /* Adequate padding, not too bulky */
+    font-size: 1em; /* Clean and readable font size */
+    font-weight: bold; /* Bold text for emphasis */
+    border-radius: 4px; /* Slight rounding of corners */
+    cursor: pointer; /* Hand cursor on hover for interactivity */
+    transition: all 0.3s ease; /* Smooth transition for interactions */
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    letter-spacing: 1px; /* Slight spacing between letters for readability */
+}
+
+.order-button:hover {
+    background-color: #eee; /* Light background on hover for subtle interaction */
+    color: hsl(0, 0%, 10%); /* Maintain text color */
+    border-color: hsl(0, 0%, 10%); /* Maintain border color */
+}
+
+/* Responsive considerations */
+@media (max-width: 768px) {
+    .home-left, .home-right-section {
+        position: static; /* Reset positioning for smaller screens */
+        width: 100%; /* Full width on smaller screens */
+        height: 50%; /* Half of the parent (main) height */
+    }
+}
+
+
+  
+  
+  
+  
+  
+  
+
+
+
