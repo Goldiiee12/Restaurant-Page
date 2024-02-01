@@ -171,19 +171,21 @@ button:hover {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align to the top to reduce space from the header */
     overflow: hidden;
   }
   
   .menu-banner {
-    max-width: 100%; /* Adjust the size of the image */
-    max-height: 1000vh; /* Adjust based on your layout */
+    max-width: 100%; /* Full width of the container */
+    max-height: calc(100vh - var(--header-height) - var(--footer-height)); /* Adjust based on the header and footer heights */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     border: 10px solid #ffffff; /* White border for a classic frame look */
     border-radius: 10px; /* Slightly rounded corners for a softer look */
     padding: 5px; /* Space for the inner shadow */
     box-sizing: border-box; /* Include padding and border in the width and height */
+    object-fit: contain; /* Ensure the image is fully visible */
   }
+  
 
 /* Contact Page */
   
