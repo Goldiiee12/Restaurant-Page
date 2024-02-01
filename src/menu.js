@@ -1,4 +1,4 @@
-import myPicture from "/dist/images/food/Artboard 1.png";
+import myPicture from "dist/images/food/Artboard 1.png";
 
 function createMenu() {
   const menu = document.createElement("div");
