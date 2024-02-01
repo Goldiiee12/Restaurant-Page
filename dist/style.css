@@ -176,8 +176,8 @@ button:hover {
   }
   
   .menu-banner {
-    max-width: 80%; /* Adjust the size of the image */
-    max-height: 80vh; /* Adjust based on your layout */
+    max-width: 100%; /* Adjust the size of the image */
+    max-height: 1000vh; /* Adjust based on your layout */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     border: 10px solid #ffffff; /* White border for a classic frame look */
     border-radius: 10px; /* Slightly rounded corners for a softer look */
