@@ -1,15 +1,14 @@
+import myPicture from "/dist/images/food/Artboard 1.png";
+
 function createMenu() {
   const menu = document.createElement("div");
   menu.classList.add("menu");
 
-  // Create a full-page SVG image element
-  const menuImage = document.createElement("img");
-  menuImage.src = "/dist/images/food/Artboard 1.png"; // Update with the path to your SVG image
-  menuImage.alt = "Full Page Background";
-  menuImage.classList.add("menu-background");
+  const banner = new Image();
+  banner.src = myPicture;
 
-  // Append the full-page SVG to the menu
-  menu.appendChild(menuImage);
+  // Append the full-page image to the menu
+  menu.appendChild(banner);
 
   return menu;
 }
@@ -21,3 +20,4 @@ function loadMenu() {
 }
 
 export default loadMenu;
+
