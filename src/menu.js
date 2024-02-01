@@ -1,4 +1,4 @@
-import myPicture from "./home/vboxuser/Restaurant-Page/dist/images/food/Artboard 1.png";
+import myPicture from "../dist/images/Artboard.png";
 
 function createMenu() {
   const menu = document.createElement("div");
@@ -6,6 +6,7 @@ function createMenu() {
 
   const banner = new Image();
   banner.src = myPicture;
+  banner.classList.add("menu-banner"); // Add this line to target the image with CSS
 
   // Append the full-page image to the menu
   menu.appendChild(banner);
@@ -20,4 +21,6 @@ function loadMenu() {
 }
 
 export default loadMenu;
+
+
 
