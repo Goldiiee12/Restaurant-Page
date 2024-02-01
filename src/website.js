@@ -77,7 +77,7 @@ function createFooter() {
   footer.classList.add("footer");
 
   const copyright = document.createElement("p");
-  copyright.textContent = `Copyright © ${new Date().getFullYear()} Goldiiee12`;
+  copyright.textContent = `Copyright © ${new Date().getFullYear()} Caleb`;
 
   const githubLink = document.createElement("a");
   githubLink.href = "https://github.com/Goldiiee12/Restaurant-Page";

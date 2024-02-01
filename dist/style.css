@@ -115,7 +115,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Style for the 'Online Order' button */
+    /* Style for the 'Online Order' button */
 button {
     background: none; /* Remove button background */
     border: none; /* Remove button border */
@@ -153,7 +153,7 @@ button:hover {
     border-color: hsl(0, 0%, 10%); /* Maintain border color */
 }
 
-/* Responsive considerations */
+    /* Responsive considerations */
 @media (max-width: 768px) {
     .home-left, .home-right-section {
         position: static; /* Reset positioning for smaller screens */
@@ -163,9 +163,63 @@ button:hover {
 }
 
 
+/* Menu Page */
+
+
+
+/* Contact Page */
   
+.contact-container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+    background-color: #fff; /* Consider a light pink background if you prefer */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 0px;
+  }
   
+  .contact-title {
+    color: #c20030; /* Pink color for the title */
+    margin-bottom: 2em;
+    margin-top: 5em;
+  }
   
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button.contact-button {
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(345, 100%, 68%);; /* Pink color for the button */
+    color: beige;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button.contact-button:hover {
+    background-color: hsl(345, 100%, 58%); /* Darker pink on hover */
+  }
+
+  .contact-detail a {
+    color: hsl(345, 100%, 38%); /* Pink color for the links */
+    text-decoration: none; /* No underline */
+  }
+  
+  .contact-detail a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
   
   
   
